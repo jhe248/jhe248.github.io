@@ -16,7 +16,7 @@ Education
 * B.S. in Agricultural & Applied Economics, University of Wisconsin-Madison, 2022
 * B.S. in Environmental Studies, University of Wisconsin-Madison, 2022
 
-<! ---
+<!---
 Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
