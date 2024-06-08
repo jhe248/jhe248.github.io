@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-You can download my CV here: [CV](files/cv.pdf).
+You can download my CV here: [CV](https://github.com/jhe248/jhe248.github.io/blob/master/files/cv.pdf).
 {% include base_path %}
 
 Education
