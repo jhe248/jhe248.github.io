@@ -27,7 +27,7 @@ author:
   bio              : "Short biography for the left-hand sidebar"
   location         : "Boston"
   employer         : "Boston University"
-  uri              : # URL
+  URI              : "https://jhe248.github.io"
   email            : "jhhe@bu.edu" 
 
   # Academic websites
