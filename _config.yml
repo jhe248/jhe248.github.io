@@ -21,7 +21,7 @@ repository               : "jhe248/jhe248.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "jhe_profile.png"
   name             : "Jiahang He"
   pronouns         : "he/him"  
   bio              : "Short biography for the left-hand sidebar"
