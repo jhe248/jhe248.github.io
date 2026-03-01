@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "jhe248's Website"
+title                    : "Jiahang He"
 title_separator          : "-"
-name                     : &name "jhe248"
-description              : &description "Personal academic website"
+name                     : &name "Jiahang He"
+description              : &description "PhD Student in Earth Environment at Boston University"
 url                      : https://jhe248.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jhe248/jhe248.github.io"
@@ -23,13 +23,13 @@ repository               : "jhe248/jhe248.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "jhe248"
+  name             : "Jiahang He"
   pronouns         : # example: "she/her"
-  bio              : ""
-  location         : ""
-  employer         : ""
+  bio              : "PhD Student in Earth Environment at Boston University. Interested in environmental processes and Earth system science."
+  location         : "Boston, MA"
+  employer         : "Boston University"
   uri              : # URL
-  email            : ""
+  email            : "jhhe@bu.edu"
 
   # Academic websites
   academia         : # URL
