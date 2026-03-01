@@ -1,19 +1,23 @@
 /* ==========================================================================
-   DEFAULT THEME
+   DEFAULT THEME - Matcha Green + Indigo
    ========================================================================== */
 
 /* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : #9ba1a6;
-$lighter-gray               : mix(#fff, $gray, 90%);
+$gray                       : #6B6B6B;
+$dark-gray                  : #2D2D2D;
+$darker-gray                : #1A1A1A;
+$light-gray                 : #999999;
+$lighter-gray               : #E8E8E8;
+
+/* Matcha green and indigo brand colors */
+$matcha                     : #6B8E6B;
+$indigo                     : #4B5D8D;
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
+$info-color                 : $indigo;
+$notice-color               : $gray;
+$success-color              : $matcha;
 $warning-color              : #f89406;
 
 /* Other basic settings for the template */
@@ -28,20 +32,21 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
+    --global-base-color                 : #{$matcha};
+    --global-bg-color                   : #FAFAF8;
+    --global-footer-bg-color            : #F2F2EF;
     --global-border-color               : #{$lighter-gray};
-    --global-dark-border-color          : #bdc1c4;
-    --global-code-background-color      : #fafafa;
+    --global-dark-border-color          : #CCCCCC;
+    --global-code-background-color      : #F5F5F2;
     --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
+    --global-fig-caption-color          : #{$light-gray};
+    --global-link-color                 : #{$indigo};
+    --global-link-color-hover           : mix(#000, #{$indigo}, 20%);
+    --global-link-color-visited         : mix(#fff, #{$indigo}, 15%);
     --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
+    --global-masthead-link-color-hover  : #{$indigo};
     --global-text-color                 : #{$dark-gray};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$lighter-gray};
+    --global-accent-color               : #{$matcha};
 }
