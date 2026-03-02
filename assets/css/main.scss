@@ -44,14 +44,15 @@
 
 
 /* ==========================================================================
-   CUSTOM STYLES - Clean responsive layout
+   CUSTOM STYLES — Minimalist academic, matcha + indigo
    ========================================================================== */
 
-/* ---------- Global responsive text overflow fix ---------- */
+/* ---------- Global base ---------- */
 body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%;
+  font-size: 0.92em; /* slightly smaller global base */
 }
 
 img {
@@ -66,29 +67,25 @@ img {
 
 /* ---------- Page layout (sidebar-aware) ---------- */
 
-/* Default: no sidebar, centered single column */
 #main {
   margin-left: auto;
   margin-right: auto;
-  max-width: 840px;
+  max-width: 820px;
 }
 
-/* --- With sidebar: flexbox, sidebar sticky --- */
 #main.with-sidebar {
-  max-width: 1100px;
+  max-width: 1080px;
 
   @include breakpoint($large) {
     display: flex;
     align-items: flex-start;
     gap: 2.5em;
 
-    /* Remove clearfix pseudo-element which becomes a ghost flex item */
     &::after {
       display: none;
     }
   }
 
-  /* Sticky sidebar (override the theme's position: fixed) */
   @media screen and (min-width: 1024px) {
     .sidebar {
       position: sticky !important;
@@ -97,14 +94,13 @@ img {
       max-height: calc(100vh - #{$masthead-height});
       overflow-y: auto;
       flex-shrink: 0;
-      width: 210px !important;
+      width: 200px !important;
       float: none !important;
       border-right: 1px solid var(--global-border-color);
       padding-right: 1.2em;
     }
   }
 
-  /* Content area: fill remaining space */
   @include breakpoint($large) {
     .archive,
     .page {
@@ -118,7 +114,6 @@ img {
   }
 }
 
-/* --- No sidebar: full-width centered content --- */
 #main.no-sidebar {
   .page,
   .archive {
@@ -131,9 +126,9 @@ img {
   }
 }
 
-/* ---------- Masthead / Navbar refinements ---------- */
+/* ---------- Masthead ---------- */
 .masthead {
-  border-bottom: 2px solid var(--global-accent-color, #6B8E6B);
+  border-bottom: 1px solid var(--global-accent-color, #6B8E6B);
 
   &::after {
     display: none;
@@ -143,22 +138,23 @@ img {
 .masthead__menu-item--lg a {
   font-family: "Source Sans 3", $sans-serif;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  font-size: 0.95em;
+  letter-spacing: 0.01em;
 }
 
 .greedy-nav {
   a {
     font-family: "Source Sans 3", $sans-serif;
-    font-size: 0.95em;
-    font-weight: 600;
+    font-size: 0.85em;
+    font-weight: 500;
   }
 
   .visible-links li:first-child a {
-    font-size: 1.1em;
+    font-size: 1em;
+    font-weight: 700;
   }
 }
 
-/* Theme toggle icon styling */
 #theme-toggle a {
   cursor: pointer;
   color: var(--global-masthead-link-color);
@@ -170,16 +166,16 @@ img {
 
 /* ---------- Home page layout ---------- */
 .home-wrapper {
-  max-width: 820px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 2em 1.5em 1em;
+  padding: 2em 1.5em 2em;
 }
 
 .home-intro {
   display: flex;
   gap: 2.5em;
   align-items: flex-start;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .home-text {
@@ -189,7 +185,7 @@ img {
 
 .home-text h1 {
   font-family: "Source Sans 3", -apple-system, sans-serif;
-  font-size: 2.2em;
+  font-size: 1.75em;
   font-weight: 700;
   margin: 0 0 0.15em;
   color: var(--global-text-color);
@@ -198,44 +194,59 @@ img {
 
 .home-text .subtitle {
   color: var(--global-text-color-light);
-  font-size: 1.05em;
-  margin-bottom: 1.2em;
+  font-size: 0.88em;
+  margin-bottom: 0.9em;
   font-style: italic;
 }
 
 .home-text p {
-  font-size: 1em;
-  line-height: 1.7;
+  font-size: 0.88em;
+  line-height: 1.75;
   color: var(--global-text-color);
+  margin-bottom: 0.5em;
 }
 
+/* Photo: portrait rectangle, phone-friendly proportions */
 .home-photo {
   flex-shrink: 0;
-  width: 220px;
+  width: 200px;
 }
 
 .home-photo img {
   width: 100%;
-  border-radius: 6px;
-  border: 2px solid var(--global-accent-color, #6B8E6B);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  border: 1.5px solid var(--global-accent-color, #6B8E6B);
+  display: block;
 }
 
 /* Home page sections */
 .home-section {
-  margin-top: 2em;
-  padding-top: 1.5em;
-  border-top: 2px solid var(--global-accent-color, #6B8E6B);
+  margin-top: 1.8em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--global-border-color);
 }
 
 .home-section h2 {
   font-family: "Source Sans 3", -apple-system, sans-serif;
-  font-size: 1.3em;
+  font-size: 0.95em;
   font-weight: 700;
-  color: var(--global-text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-accent-color, #6B8E6B);
   margin-top: 0;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.7em;
   padding-bottom: 0;
   border-bottom: none;
+}
+
+.home-entry p {
+  font-size: 0.87em;
+  line-height: 1.65;
+  margin-bottom: 0.5em;
+  color: var(--global-text-color);
 }
 
 /* Contact list */
@@ -246,16 +257,17 @@ img {
 }
 
 .contact-list li {
-  margin-bottom: 0.6em;
-  font-size: 0.95em;
-  line-height: 1.6;
+  margin-bottom: 0.4em;
+  font-size: 0.87em;
+  line-height: 1.5;
 }
 
 .contact-list li i {
-  width: 1.4em;
+  width: 1.3em;
   text-align: center;
-  margin-right: 0.4em;
+  margin-right: 0.35em;
   color: var(--global-accent-color, #6B8E6B);
+  font-size: 0.9em;
 }
 
 .contact-list li a {
@@ -270,17 +282,17 @@ img {
 /* ---------- Mobile responsive ---------- */
 @media (max-width: 600px) {
   .home-intro {
-    flex-direction: column;
-    gap: 1.5em;
+    flex-direction: column-reverse;
+    gap: 1.2em;
   }
 
   .home-photo {
-    width: 160px;
+    width: 130px;
     margin: 0 auto;
   }
 
   .home-text h1 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-align: center;
   }
 
@@ -289,23 +301,20 @@ img {
   }
 
   .home-wrapper {
-    padding: 1.5em 1em 1em;
+    padding: 1.2em 1em 1.5em;
   }
 
-  /* Fix masthead on small screens */
   .greedy-nav a {
-    font-size: 0.85em;
-    margin: 0 0.4rem;
+    font-size: 0.8em;
+    margin: 0 0.35rem;
   }
 
-  /* Prevent tables from overflowing */
   table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* Fix pre/code overflow */
   pre {
     max-width: 100%;
     overflow-x: auto;
@@ -314,100 +323,100 @@ img {
 
 @media (max-width: 400px) {
   .home-text h1 {
-    font-size: 1.4em;
+    font-size: 1.25em;
   }
 
   .greedy-nav a {
-    font-size: 0.8em;
-    margin: 0 0.3rem;
+    font-size: 0.75em;
+    margin: 0 0.25rem;
   }
 }
 
-/* ---------- Page content link styling ---------- */
+/* ---------- Page content ---------- */
 .page__content a {
   color: var(--global-link-color);
 }
 
-/* ---------- Section headings with matcha accent ---------- */
 .page__content h2 {
-  border-bottom: 2px solid var(--global-accent-color, #6B8E6B);
-  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.25em;
+  font-size: 1.1em;
 }
 
-/* ---------- Nathan-style typography: smaller, cleaner body text ---------- */
+.page__content h3 {
+  font-size: 0.98em;
+}
+
 .page__content {
   p, li, dl {
-    font-size: 0.92em;
-    line-height: 1.8;
+    font-size: 0.88em;
+    line-height: 1.78;
   }
 }
 
-/* Page title: clean, with matcha underline */
 .page__title {
   font-family: "Source Sans 3", $sans-serif;
   font-weight: 700;
-  font-size: 1.75em;
-  border-bottom: 2px solid var(--global-accent-color, #6B8E6B);
-  padding-bottom: 0.3em;
-  margin-bottom: 0.8em;
+  font-size: 1.4em;
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.25em;
+  margin-bottom: 0.7em;
 }
 
-/* Archive item titles: lean and readable */
+/* Archive items */
 .archive__item-title {
   font-family: "Source Sans 3", $sans-serif;
-  font-size: 1em;
+  font-size: 0.92em;
   font-weight: 600;
 }
 
 .archive__item-excerpt {
-  font-size: 0.88em;
-  line-height: 1.7;
+  font-size: 0.84em;
+  line-height: 1.65;
 }
 
-/* Sidebar: compact, clean author profile */
+/* Sidebar */
 .sidebar .author__bio {
-  font-size: 0.83em;
-  line-height: 1.6;
-  margin-top: 8px;
-  margin-bottom: 12px;
+  font-size: 0.8em;
+  line-height: 1.55;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 
 .sidebar .author__name {
-  font-size: 1.05em;
+  font-size: 0.98em;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .sidebar p,
 .sidebar li {
-  font-size: 0.82em;
-  line-height: 1.5;
+  font-size: 0.8em;
+  line-height: 1.45;
 }
 
-/* Sidebar avatar: good size, circular */
 .author__avatar img {
-  max-width: 150px !important;
+  max-width: 140px !important;
 }
 
-/* Sidebar links: compact */
 .author__urls a {
-  font-size: 0.85em !important;
-  margin-bottom: 3px !important;
+  font-size: 0.82em !important;
+  margin-bottom: 2px !important;
   padding-top: 1px !important;
   padding-bottom: 1px !important;
 }
 
-/* ---------- Footer refinements ---------- */
+/* ---------- Footer ---------- */
 .page__footer {
-  font-size: 0.85em;
-  border-top: 2px solid var(--global-accent-color, #6B8E6B);
+  font-size: 0.8em;
+  border-top: 1px solid var(--global-border-color);
 }
 
 .page__footer-copyright {
   text-align: center;
 }
 
-/* ---------- Dark mode hidden-links dropdown fix ---------- */
+/* ---------- Dark mode dropdown fix ---------- */
 html[data-theme="dark"] {
   .greedy-nav .hidden-links {
     background: var(--global-bg-color);
