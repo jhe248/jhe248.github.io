@@ -18,15 +18,6 @@ author_profile: false
       disruption.
     </p>
 
-    <h2>Interests</h2>
-    <ul>
-      <li>Environmental economics</li>
-      <li>Urban economics</li>
-      <li>Climate risk modeling</li>
-      <li>Disaster resilience and adaptation</li>
-      <li>General equilibrium modeling (CGE)</li>
-    </ul>
-
     <h2>Working Papers</h2>
 
     <div class="home-entry">
@@ -68,18 +59,5 @@ author_profile: false
       </p>
     </div>
 
-    <h2>Other Research</h2>
-    <ul>
-      <li>Sentiment of Language in Environmental Economics Journals, with D. Parker and N. Ha Do</li>
-      <li>Benefit-Cost Analysis and Budget-Impact Calculator, UW–Madison Office of Sustainability</li>
-      <li>Network Analysis of Dairy Supply Chains, UW–Madison</li>
-    </ul>
-
-    <h2>Presentations</h2>
-    <ul>
-      <li>IDEAAL DR2 Workshop, University of Washington — 2026 (scheduled)</li>
-      <li>Camp Resources XIII — 2026 (scheduled)</li>
-      <li>Hurricanes and Health: Understanding Risks and Fostering Resilience, BUSPH–HSPH CAFE — 2025</li>
-    </ul>
   </div>
 </div>
