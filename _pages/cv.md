@@ -1,64 +1,41 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
-author_profile: true
+title: "Curriculum Vitae"
+layout: default
+author_profile: false
+# Update this whenever you replace files/cv_jiahanghe.pdf. If left blank the
+# page falls back to the PDF's timestamp, which on GitHub Pages is the build
+# date rather than the date you last edited the CV.
+cv_updated: 2026-08-04
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+{% assign cv = site.static_files | where: "path", "/files/cv_jiahanghe.pdf" | first %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<div class="home-wrapper">
+  <h1 class="page__title">Curriculum Vitae</h1>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+  {% if cv %}
+  <div class="cv-meta">
+    <p class="cv-meta-label">CV last updated</p>
+    <p class="cv-meta-date">{% if page.cv_updated %}{{ page.cv_updated | date: "%B %-d, %Y" }}{% else %}{{ cv.modified_time | date: "%B %-d, %Y" }}{% endif %}</p>
+  </div>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  <div class="cv-download">
+    <a href="{{ base_path }}/files/cv_jiahanghe.pdf" download>Download current CV</a>
+  </div>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  <div class="cv-embed">
+    <iframe src="{{ base_path }}/files/cv_jiahanghe.pdf" title="Curriculum Vitae of Jiahang He"></iframe>
+  </div>
+  {% else %}
+  <div class="page__content">
+    <p>
+      The CV is not published yet. Add the PDF at <code>files/cv_jiahanghe.pdf</code>
+      and this page will show a download button and an inline viewer automatically,
+      with the date taken from the file itself.
+    </p>
+  </div>
+  {% endif %}
+</div>
