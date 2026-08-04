@@ -33,25 +33,32 @@ redirect_from:
       <h1 class="home-name">Jiahang He</h1>
 
       <p class="home-position">
-        <em>PhD Student</em>, Earth and Environment, Boston University.
+        <em>PhD Student</em>, Earth &amp; Environment, Boston University.
       </p>
 
       <ul class="home-affiliations">
-        <li><em>Department of Earth and Environment</em>, <a href="https://www.bu.edu/earth/">Boston University</a></li>
+        <li><em>Department of Earth &amp; Environment</em>, <a href="https://www.bu.edu/earth/">Boston University</a></li>
+        <li><em>URBAN Program</em> (NSF Research Traineeship), Boston University</li>
+        <li><em>CHEER Hub</em>, University of Delaware</li>
       </ul>
 
       <p class="home-bio">
-        I am a PhD student in the Department of Earth and Environment at Boston University.
-        My research focuses on environmental processes and Earth system science.
+        I am a PhD student in the Department of Earth &amp; Environment at Boston University,
+        advised by Professor Ian Sue Wing. I study the economics of climate risk — how
+        tropical cyclones and extreme flooding translate into mortality, economic loss and
+        social burden, and how households and regional economies adapt in their wake.
       </p>
 
       <p class="home-bio">
-        I am interested in understanding how environmental change unfolds across space and time,
-        combining observational data with modeling approaches.
+        My work combines general equilibrium modeling with parcel- and household-level data
+        to trace disaster impacts through infrastructure failure, power outages and healthcare
+        disruption. Before Boston University I studied agricultural and applied economics and
+        environmental studies at the University of Wisconsin–Madison.
       </p>
 
       <ul class="contact-list">
         <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:jhhe@bu.edu">jhhe@bu.edu</a></li>
+        <li><i class="fas fa-building-columns" aria-hidden="true"></i> CAS 432, 685 Commonwealth Ave, Boston, MA 02215</li>
       </ul>
     </div>
 
