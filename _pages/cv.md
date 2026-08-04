@@ -1,64 +1,62 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
-author_profile: true
+title: "CV"
+layout: default
+author_profile: false
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<div class="home-wrapper">
+  <h1 class="page__title">CV</h1>
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+  <div class="page__content">
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. in Earth and Environment, Boston University, in progress</li>
+    </ul>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+    <h2>Experience</h2>
+    <ul>
+      <li>Add a position here.</li>
+    </ul>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+    <h2>Skills</h2>
+    <ul>
+      <li>Add a skill here.</li>
+    </ul>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+    <h2>Publications</h2>
+    {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+    {% if sorted_pubs.size > 0 %}
+      {% for pub in sorted_pubs %}
+      <div class="home-entry">
+        <p>
+          {% if pub.paperurl %}<a href="{{ pub.paperurl }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}.
+          {% if pub.authors %}{{ pub.authors }}. {% endif %}
+          {% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}.
+        </p>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>Publications will appear here.</p>
+    {% endif %}
+
+    <h2>Talks</h2>
+    {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+    {% if sorted_talks.size > 0 %}
+      {% for talk in sorted_talks %}
+      <div class="home-entry">
+        <p>
+          {{ talk.title }}.
+          {% if talk.venue %}<em>{{ talk.venue }}</em>{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.date %}, {{ talk.date | date: "%Y" }}{% endif %}.
+        </p>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>Talks will appear here.</p>
+    {% endif %}
+
+  </div>
+</div>
