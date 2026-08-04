@@ -15,6 +15,11 @@ redirect_from:
         <img src="{{ base_path }}/images/profile.png" alt="Jiahang He">
       </div>
 
+      <p class="home-location">
+        <i class="fas fa-location-dot" aria-hidden="true"></i>
+        <a href="https://www.openstreetmap.org/relation/9660059#map=6/42.84/-66.80">Boston, Massachusetts</a>
+      </p>
+
       <!-- Replace the "#" below with your real profile URLs -->
       <ul class="home-social">
         <li><a href="#" title="Google Scholar"><i class="fab fa-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a></li>
