@@ -12,7 +12,9 @@ redirect_from:
 
     <div class="home-left">
       <div class="home-photo">
-        <img src="{{ base_path }}/images/profile.png" alt="Jiahang He">
+        {% comment %} Uses images/profile.jpg once it is uploaded; falls back to the placeholder until then. {% endcomment %}
+        {% assign photo = site.static_files | where: "path", "/images/profile.jpg" | first %}
+        <img src="{{ base_path }}/images/{% if photo %}profile.jpg{% else %}profile.png{% endif %}" alt="Jiahang He">
       </div>
 
       <p class="home-location">
