@@ -1,0 +1,7 @@
+# NEWS ITEMS -> shown in "RECENT NEWS" on the homepage.
+# Newest at the TOP. Fields: title (required), source, url, date, image.
+- title: "Started PhD in Earth & Environment at Boston University"
+  source: "Boston University"
+  url: "https://www.bu.edu/earth/"
+  date: 2024-09-01
+  image:

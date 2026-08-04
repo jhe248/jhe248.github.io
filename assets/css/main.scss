@@ -41,3 +41,102 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+/* ===== CUSTOM STYLES — Academic minimalist ===== */
+body { overflow-wrap: break-word; word-wrap: break-word; -webkit-text-size-adjust: 100%; font-size: 1.05em; line-height: 1.65; }
+img { max-width: 100%; height: auto; }
+.page__content { overflow-wrap: break-word; word-wrap: break-word; }
+
+#main { margin-left: auto; margin-right: auto; max-width: 880px; }
+#main.with-sidebar {
+  max-width: 1120px;
+  @include breakpoint($large) { display: flex; align-items: flex-start; gap: 2.5em; &::after { display: none; } }
+  @media screen and (min-width: 1024px) {
+    .sidebar { position: sticky !important; top: $masthead-height !important; height: auto !important;
+      max-height: calc(100vh - #{$masthead-height}); overflow-y: auto; flex-shrink: 0; width: 210px !important;
+      float: none !important; border-right: 1px solid var(--global-border-color); padding-right: 1.2em; } }
+  @include breakpoint($large) {
+    .archive, .page { flex: 1 !important; min-width: 0; float: none !important; width: auto !important;
+      margin-left: 0 !important; padding-right: 0 !important; } }
+}
+#main.no-sidebar { .page, .archive { @include breakpoint($large) { width: 100% !important; float: none !important; margin-left: 0 !important; padding-right: 0 !important; } } }
+
+.masthead { border-bottom: 1px solid var(--global-accent-color, #6B8E6B); &::after { display: none; } }
+.masthead__menu-item--lg a { font-family: "Source Sans 3", $sans-serif; font-weight: 600; font-size: 1em; letter-spacing: 0.02em; }
+.greedy-nav {
+  a { font-family: "Source Sans 3", $sans-serif; font-size: 0.95em; font-weight: 400; letter-spacing: 0.02em; }
+  .visible-links li:first-child a { font-size: 1.02em; font-weight: 600; }
+}
+#theme-toggle a { cursor: pointer; color: var(--global-masthead-link-color); &:hover { color: var(--global-accent-color, #6B8E6B); } }
+
+/* ===== HOME ===== */
+.home-wrapper { max-width: 900px; margin: 0 auto; padding: 2.5em 1.5em 3em; }
+.home-intro { display: flex; gap: 2.8em; align-items: flex-start; }
+.home-left { flex-shrink: 0; width: 260px; }
+.home-photo { width: 100%; }
+.home-photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top; border-radius: 3px; display: block; }
+
+.home-social { list-style: none; padding: 0; margin: 1.1em 0 0; }
+.home-social li { margin-bottom: 0.5em; }
+.home-social a { display: flex; align-items: center; font-family: "Source Sans 3", $sans-serif; font-size: 0.93em;
+  color: var(--global-link-color); text-decoration: none;
+  &:hover { color: var(--global-accent-color, #6B8E6B); text-decoration: underline; } }
+.home-social a i { width: 1.5em; margin-right: 0.5em; text-align: center; font-size: 1.05em; color: var(--global-accent-color, #6B8E6B); flex-shrink: 0; }
+
+.home-text { flex: 1; min-width: 0; padding-top: 0.2em; }
+.home-name { font-family: "Source Sans 3", -apple-system, sans-serif; font-size: 2.5em; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 0.055em; margin: 0 0 0.5em; color: var(--global-text-color); line-height: 1.15; }
+.home-position { font-size: 1em; line-height: 1.6; margin: 0 0 1em; color: var(--global-text-color); }
+.home-affiliations { list-style: none; padding: 0; margin: 0 0 1.4em;
+  li { font-size: 0.97em; line-height: 1.75; color: var(--global-text-color); } }
+.home-bio { font-size: 1em; line-height: 1.75; color: var(--global-link-color); margin-bottom: 1em; }
+.home-entry p { font-size: 0.97em; line-height: 1.7; margin-bottom: 0.7em; color: var(--global-text-color); }
+
+.contact-list { list-style: none; padding: 0; margin: 1.2em 0 0; }
+.contact-list li { margin-bottom: 0.45em; font-size: 0.97em; line-height: 1.6; }
+.contact-list li i { width: 1.3em; text-align: center; margin-right: 0.4em; color: var(--global-accent-color, #6B8E6B); }
+.contact-list li a { color: var(--global-link-color); text-decoration: none; &:hover { text-decoration: underline; } }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .home-left { width: 220px; }
+  .home-name { font-size: 2.1em; }
+  .home-intro { gap: 2em; }
+}
+@media (max-width: 640px) {
+  body { font-size: 1.02em; }
+  .home-wrapper { padding: 1.5em 1.15em 2em; }
+  .home-intro { flex-direction: column; align-items: center; gap: 1.4em; }
+  .home-left { width: 200px; max-width: 62%; }
+  .home-social { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.35em 1.4em; margin-top: 1em; }
+  .home-social li { margin-bottom: 0; }
+  .home-social a span { display: none; }
+  .home-social a i { width: auto; margin-right: 0; font-size: 1.5em; }
+  .home-text { width: 100%; padding-top: 0; }
+  .home-name { font-size: 1.75em; text-align: center; letter-spacing: 0.04em; margin-bottom: 0.55em; }
+  .home-position, .home-affiliations { text-align: center; }
+  .greedy-nav a { font-size: 0.9em; margin: 0 0.4rem; }
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  pre { max-width: 100%; overflow-x: auto; }
+}
+@media (max-width: 400px) {
+  .home-name { font-size: 1.5em; }
+  .home-left { max-width: 72%; }
+  .greedy-nav a { font-size: 0.85em; margin: 0 0.3rem; }
+}
+
+/* ===== INTERIOR PAGES ===== */
+.page__content a { color: var(--global-link-color); }
+.page__content {
+  p, li, dl { font-size: 1em; line-height: 1.8; }
+  h2 { font-family: "Source Sans 3", $sans-serif; font-size: 1.15em; font-weight: 400; text-transform: uppercase;
+    letter-spacing: 0.07em; color: var(--global-accent-color, #6B8E6B); border-bottom: none; margin-top: 1.8em; }
+  h3 { font-size: 1.05em; font-weight: 600; }
+}
+.page__title { font-family: "Source Sans 3", $sans-serif; font-weight: 400; font-size: 1.7em; text-transform: uppercase;
+  letter-spacing: 0.055em; border-bottom: 1px solid var(--global-border-color); padding-bottom: 0.35em; margin-bottom: 0.9em; }
+.archive__item-title { font-family: "Source Sans 3", $sans-serif; font-size: 1.02em; font-weight: 600; margin-top: 0.9em; }
+.archive__item-excerpt { font-size: 0.95em; line-height: 1.7; }
+.sidebar .author__bio { font-size: 0.9em; line-height: 1.6; margin-top: 6px; margin-bottom: 10px; }
+.sidebar .author__name { font-size: 1.05em; font-weight: 600; margin-top: 8px; }
+.sidebar p, .sidebar li { font-size: 0.88em; line-height: 1.5; }
+.author__avatar img { max-width: 150px !important; }
