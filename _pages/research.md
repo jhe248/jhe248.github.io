@@ -18,68 +18,52 @@ author_profile: false
       disruption.
     </p>
 
-    <h2>Interests</h2>
-    <ul>
-      <li>Environmental economics</li>
-      <li>Urban economics</li>
-      <li>Climate risk modeling</li>
-      <li>Disaster resilience and adaptation</li>
-      <li>General equilibrium modeling (CGE)</li>
-    </ul>
+    <h2>Selected Works in Progress</h2>
 
-    <h2>Working Papers</h2>
+    <div class="pub-list">
 
-    <div class="home-entry">
-      <p>
-        <strong>Tropical Cyclone Mortality Mechanisms: Infrastructure Failure, Heat, Power
-        Outages, and Healthcare Disruption.</strong>
-        With Ian Sue Wing. <em>Draft in progress.</em>
-      </p>
+      <div class="pub-item">
+        <p class="pub-title">Tropical Cyclone Mortality Mechanisms: Infrastructure Failure, Heat, Power Outages, and Healthcare Disruption</p>
+        <p class="pub-authors">
+          <span class="pub-self">He, J.</span> and I. Sue Wing
+          <span class="pub-status">(draft in progress)</span>
+        </p>
+      </div>
+
+      <div class="pub-item">
+        <p class="pub-title">Tropical Cyclone Hazards and Economic Losses in Coastal North Carolina</p>
+        <p class="pub-authors">
+          <span class="pub-self">He, J.</span>, J. Parker, B. Blanton, C. Szpilka, D. Liu,
+          K. Dresback, R. Kolar, B. Colle, L. Nozick, and I. Sue Wing
+          <span class="pub-status">(preparing for submission)</span>
+        </p>
+      </div>
+
+      <div class="pub-item">
+        <p class="pub-title">Economy Dynamics and Disaster Resilience for Households in North Carolina: An Adaptive Rolling Intertemporal Planning Model</p>
+        <p class="pub-authors">
+          <span class="pub-self">He, J.</span> and I. Sue Wing
+          <span class="pub-status">(draft in progress)</span>
+        </p>
+        <p class="pub-note">Conducted under the CHEER Hub</p>
+      </div>
+
+      <div class="pub-item">
+        <p class="pub-title">Household Sorting Over Tropical Cyclones in North Carolina</p>
+        <p class="pub-authors">
+          <span class="pub-self">He, J.</span>
+        </p>
+      </div>
+
+      <div class="pub-item">
+        <p class="pub-title">A Parcel-Level Implementation of the Capabilities-Approach Social Burden Metric for Massachusetts Coastal Communities</p>
+        <p class="pub-authors">
+          <span class="pub-self">He, J.</span>
+          <span class="pub-status">(draft in progress)</span>
+        </p>
+        <p class="pub-note">In collaboration with InnSure</p>
+      </div>
+
     </div>
-
-    <div class="home-entry">
-      <p>
-        <strong>Tropical Cyclone Hazards and Economic Losses in Coastal North Carolina.</strong>
-        With Jackson Parker, Brian Blanton, Christine Szpilka, Dahui Liu, Kendra Dresback,
-        Randy Kolar, Brian Colle, Linda Nozick and Ian Sue Wing.
-        <em>Preparing for submission.</em>
-      </p>
-    </div>
-
-    <div class="home-entry">
-      <p>
-        <strong>Economy Dynamics and Disaster Resilience for Households in North Carolina:
-        An Adaptive Rolling Intertemporal Planning Model.</strong>
-        With Ian Sue Wing, under the CHEER Hub. <em>Draft in progress.</em>
-      </p>
-    </div>
-
-    <div class="home-entry">
-      <p>
-        <strong>Household Sorting Over Tropical Cyclones in North Carolina.</strong>
-      </p>
-    </div>
-
-    <div class="home-entry">
-      <p>
-        <strong>A Parcel-Level Implementation of the Capabilities-Approach Social Burden
-        Metric for Massachusetts Coastal Communities.</strong>
-        With InnSure. <em>Draft in progress.</em>
-      </p>
-    </div>
-
-    <h2>Other Research</h2>
-    <ul>
-      <li>Sentiment of Language in Environmental Economics Journals, with D. Parker and N. Ha Do</li>
-      <li>Benefit-Cost Analysis and Budget-Impact Calculator, UW–Madison Office of Sustainability</li>
-      <li>Network Analysis of Dairy Supply Chains, UW–Madison</li>
-    </ul>
-
-    <h2>Presentations</h2>
-    <ul>
-      <li>IDEAAL DR2 Workshop, University of Washington — 2026 (scheduled)</li>
-      <li>Camp Resources XIII — 2026 (scheduled)</li>
-      <li>Hurricanes and Health: Understanding Risks and Fostering Resilience, BUSPH–HSPH CAFE — 2025</li>
-    </ul>
   </div>
 </div>
