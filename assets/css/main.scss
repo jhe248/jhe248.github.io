@@ -75,37 +75,42 @@
 
 $modern-sans: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-/* Palette: three blues from the reference swatch. Dark carries structure
-   (headings, rules, icons), mid carries links, light carries hairlines. */
-$blue-light: #A3B3C8;
-$blue-mid:   #7A9AB5;
-$blue-dark:  #4C6E8C;
+/* Palette: matcha green carries structure (headings, rules, icons),
+   indigo carries links, against a warm off-white ground. */
+$matcha:      #6B8E6B;
+$matcha-dark: #587758;
+$matcha-soft: #A9BFA9;
+$indigo:      #4B5D8D;
+$indigo-soft: #8E9BC0;
+$warm-white:  #FAFAF8;
+$warm-rule:   #DEE0D8;
 
 :root {
-  --site-blue-light: #{$blue-light};
-  --site-blue-mid:   #{$blue-mid};
-  --site-blue-dark:  #{$blue-dark};
+  --site-matcha: #{$matcha};
+  --site-indigo: #{$indigo};
 
+  --global-bg-color: #{$warm-white};
   --global-text-color: #000;
   --global-text-color-light: #4a4a4a;
-  --global-link-color: #{$blue-mid};
-  --global-link-color-hover: #{$blue-dark};
-  --global-link-color-visited: #{$blue-mid};
-  --global-accent-color: #{$blue-dark};
-  --global-border-color: #{$blue-light};
+  --global-link-color: #{$indigo};
+  --global-link-color-hover: #{$matcha-dark};
+  --global-link-color-visited: #{$indigo};
+  --global-accent-color: #{$matcha};
+  --global-border-color: #{$warm-rule};
   --global-masthead-link-color: #000;
-  --global-masthead-link-color-hover: #{$blue-dark};
+  --global-masthead-link-color-hover: #{$matcha-dark};
 }
 
 html[data-theme="dark"] {
-  --global-text-color: #e8ecf1;
-  --global-text-color-light: #a8b4c2;
-  --global-link-color: #{$blue-mid};
-  --global-link-color-hover: #{$blue-light};
-  --global-link-color-visited: #{$blue-mid};
-  --global-accent-color: #{$blue-light};
-  --global-border-color: #3a4a5c;
-  --global-masthead-link-color: #e8ecf1;
+  --global-bg-color: #1A1A1A;
+  --global-text-color: #ececea;
+  --global-text-color-light: #adb2ab;
+  --global-link-color: #{$indigo-soft};
+  --global-link-color-hover: #{$matcha-soft};
+  --global-link-color-visited: #{$indigo-soft};
+  --global-accent-color: #{$matcha-soft};
+  --global-border-color: #3a3f39;
+  --global-masthead-link-color: #ececea;
 }
 
 body { font-family: $modern-sans; color: var(--global-text-color);
@@ -221,7 +226,7 @@ img { max-width: 100%; height: auto; }
   text-decoration: none; border-radius: 2px;
   &:hover, &:focus { background: var(--site-blue-mid); color: #fff; }
   &:focus-visible { outline: 2px solid var(--global-accent-color); outline-offset: 3px; } }
-.cv-embed { border: 1px solid var(--global-text-color); padding: 4px; background: #fff; }
+.cv-embed { border: 1px solid var(--global-text-color); padding: 4px; background: var(--global-bg-color); }
 .cv-embed iframe { display: block; width: 100%; height: 78vh; min-height: 520px; border: 0; }
 @media (max-width: 640px) { .cv-embed iframe { height: 60vh; min-height: 380px; } }
 
