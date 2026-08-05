@@ -36,9 +36,9 @@ redirect_from:
       </p>
 
       <ul class="home-affiliations">
-        <li><em>Department of Earth &amp; Environment</em>, <a href="https://www.bu.edu/earth/">Boston University</a></li>
-        <li><em>URBAN Program</em> (NSF Research Traineeship), Boston University</li>
-        <li><em>CHEER Hub</em>, University of Delaware</li>
+        <li><a href="https://www.bu.edu/earth/">Department of Earth &amp; Environment</a>, Boston University</li>
+        <li><a href="https://sites.bu.edu/urban/">URBAN Program</a> (NSF Research Traineeship), Boston University</li>
+        <li><a href="https://www.drc.udel.edu/cheer/">CHEER Hub</a>, University of Delaware</li>
       </ul>
 
       <p class="home-bio">
@@ -51,8 +51,10 @@ redirect_from:
       <p class="home-bio">
         My work combines general equilibrium modeling with parcel- and household-level data
         to trace disaster impacts through infrastructure failure, power outages and healthcare
-        disruption. Before Boston University I studied agricultural and applied economics and
-        environmental studies at the University of Wisconsin–Madison.
+        disruption. Before Boston University I studied
+        <a href="https://aae.wisc.edu/">agricultural and applied economics</a> and
+        <a href="https://nelson.wisc.edu/">environmental studies</a>
+        at the University of Wisconsin–Madison.
       </p>
 
       <ul class="contact-list">
