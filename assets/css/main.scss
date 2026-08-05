@@ -206,6 +206,10 @@ img { max-width: 100%; height: auto; }
   .pub-title { font-size: 1.02em; }
 }
 
+/* ===== EMBEDDED PLAYERS ===== */
+.embed-player { max-width: 560px; margin: 1.2em 0 1.8em; }
+.embed-player iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+
 /* ===== CV PAGE ===== */
 .cv-meta { margin: 0 0 1.6em; }
 .cv-meta-label { font-family: $modern-sans; font-size: 0.8em; text-transform: uppercase;

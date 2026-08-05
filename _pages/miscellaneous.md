@@ -10,6 +10,15 @@ author_profile: false
 
   <div class="page__content">
     <p>I love listening to music.</p>
+
+    <div class="embed-player">
+      <iframe src="https://open.spotify.com/embed/playlist/1n4GqIwZ6RLsOu8ekbXp2k?utm_source=generator"
+              title="Metal playlist on Spotify"
+              width="100%" height="352" frameborder="0" loading="lazy"
+              allowfullscreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
     <p>I love pottery.</p>
   </div>
 </div>
