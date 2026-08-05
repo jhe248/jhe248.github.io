@@ -38,8 +38,11 @@ redirect_from:
       </ul>
 
       <p class="home-bio">
-        I am a PhD student in the Department of Earth &amp; Environment at Boston University,
-        advised by Professor Ian Sue Wing. My research concerns the economics of climate
+        I am a PhD student in the
+        <a href="https://www.bu.edu/earth/">Department of Earth &amp; Environment</a>
+        at Boston University, advised by
+        <a href="https://www.bu.edu/earth/profiles/ian-sue-wing/">Professor Ian Sue Wing</a>.
+        My research concerns the economics of climate
         risk, and in particular the mechanisms through which tropical cyclones and extreme
         flooding translate into mortality, economic loss and social burden, together with
         the ways households and regional economies adapt in their aftermath.
