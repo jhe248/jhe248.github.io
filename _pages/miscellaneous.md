@@ -9,7 +9,7 @@ author_profile: false
   <h1 class="page__title">Miscellaneous</h1>
 
   <div class="page__content">
-    <p>I love listening to music.</p>
+    <p>Under construction.</p>
 
     <div class="embed-player">
       <iframe src="https://open.spotify.com/embed/playlist/1n4GqIwZ6RLsOu8ekbXp2k?utm_source=generator"
@@ -18,7 +18,5 @@ author_profile: false
               allowfullscreen
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
-
-    <p>I love pottery.</p>
   </div>
 </div>
