@@ -31,10 +31,6 @@ redirect_from:
     <div class="home-text">
       <h1 class="home-name">Jiahang He</h1>
 
-      <p class="home-position">
-        <em>PhD Student</em>, Earth &amp; Environment, Boston University.
-      </p>
-
       <ul class="home-affiliations">
         <li><a href="https://www.bu.edu/earth/">Department of Earth &amp; Environment</a>, Boston University</li>
         <li><a href="https://sites.bu.edu/urban/">URBAN Program</a> (NSF Research Traineeship), Boston University</li>
@@ -43,18 +39,19 @@ redirect_from:
 
       <p class="home-bio">
         I am a PhD student in the Department of Earth &amp; Environment at Boston University,
-        advised by Professor Ian Sue Wing. I study the economics of climate risk — how
-        tropical cyclones and extreme flooding translate into mortality, economic loss and
-        social burden, and how households and regional economies adapt in their wake.
+        advised by Professor Ian Sue Wing. My research concerns the economics of climate
+        risk, and in particular the mechanisms through which tropical cyclones and extreme
+        flooding translate into mortality, economic loss and social burden, together with
+        the ways households and regional economies adapt in their aftermath.
       </p>
 
       <p class="home-bio">
-        My work combines general equilibrium modeling with parcel- and household-level data
-        to trace disaster impacts through infrastructure failure, power outages and healthcare
-        disruption. Before Boston University I studied
-        <a href="https://aae.wisc.edu/">agricultural and applied economics</a> and
-        <a href="https://nelson.wisc.edu/">environmental studies</a>
-        at the University of Wisconsin–Madison.
+        My work combines general equilibrium modeling with parcel- and household-level data,
+        tracing disaster impacts through infrastructure failure, power outages and healthcare
+        disruption. Prior to Boston University, I studied
+        <a href="https://aae.wisc.edu/">Agricultural and Applied Economics</a> and
+        <a href="https://nelson.wisc.edu/">Environmental Studies</a>
+        at the University of Wisconsin&ndash;Madison.
       </p>
 
       <ul class="contact-list">
