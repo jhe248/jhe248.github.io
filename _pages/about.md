@@ -23,7 +23,7 @@ redirect_from:
       <!-- Replace the "#" below with your real profile URLs -->
       <ul class="home-social">
         <li><a href="#" title="ResearchGate"><i class="fab fa-researchgate" aria-hidden="true"></i><span>ResearchGate</span></a></li>
-        <li><a href="#" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a></li>
+        <li><a href="https://www.linkedin.com/in/jiahang-he" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a></li>
         <li><a href="https://github.com/jhe248" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
       </ul>
     </div>
