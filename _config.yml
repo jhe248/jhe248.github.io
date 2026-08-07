@@ -13,7 +13,7 @@ title                    : "Jiahang He"
 title_separator          : "-"
 name                     : &name "Jiahang He"
 description              : &description "PhD student in Earth and Environment at Boston University."
-url                      : https://jhe248.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://jiahanghe.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jhe248/jhe248.github.io"
 
