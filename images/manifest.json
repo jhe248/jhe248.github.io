@@ -1,5 +1,5 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "Jiahang He",
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",
@@ -11,5 +11,6 @@
 			"sizes": "512x512",
 			"type": "image/png"
 		}
-	]
+	],
+	"short_name": "Jiahang He"
 }
