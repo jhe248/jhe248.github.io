@@ -35,8 +35,9 @@ author_profile: false
         <p class="pub-authors">
           <span class="pub-self">He, J.</span>, J. Parker, B. Blanton, C. Szpilka, D. Liu,
           K. Dresback, R. Kolar, B. Colle, L. Nozick, and I. Sue Wing
-          <span class="pub-status">(preparing for submission)</span>
+          <span class="pub-status">(under review)</span>
         </p>
+        <p class="pub-note"><a href="https://www.researchsquare.com/article/rs-10540460/v1">Preprint</a></p>
       </div>
 
       <div class="pub-item">
@@ -45,7 +46,6 @@ author_profile: false
           <span class="pub-self">He, J.</span> and I. Sue Wing
           <span class="pub-status">(draft in progress)</span>
         </p>
-        <p class="pub-note">Conducted under the CHEER Hub</p>
       </div>
 
       <div class="pub-item">
@@ -61,7 +61,6 @@ author_profile: false
           <span class="pub-self">He, J.</span>
           <span class="pub-status">(draft in progress)</span>
         </p>
-        <p class="pub-note">In collaboration with InnSure</p>
       </div>
 
     </div>
