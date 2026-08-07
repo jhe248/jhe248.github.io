@@ -46,7 +46,6 @@ author_profile: false
           <span class="pub-self">He, J.</span> and I. Sue Wing
           <span class="pub-status">(draft in progress)</span>
         </p>
-        <p class="pub-note">Conducted under the CHEER Hub</p>
       </div>
 
       <div class="pub-item">
@@ -62,7 +61,6 @@ author_profile: false
           <span class="pub-self">He, J.</span>
           <span class="pub-status">(draft in progress)</span>
         </p>
-        <p class="pub-note">In collaboration with InnSure</p>
       </div>
 
     </div>
