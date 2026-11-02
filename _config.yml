@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Jiahang He"
 title_separator          : "-"
 name                     : &name "Jiahang He"
-description              : &description "PhD Student in Earth Environment at Boston University"
+description              : &description "PhD Candidate in Earth and Environment at Boston University, studying the economic impacts of natural disasters."
 url                      : https://jhe248.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jhe248/jhe248.github.io"
@@ -22,10 +22,10 @@ repository               : "jhe248/jhe248.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           :
   name             : "Jiahang He"
   pronouns         : # example: "she/her"
-  bio              : "PhD Student in Earth Environment at Boston University. Interested in environmental processes and Earth system science."
+  bio              : "PhD Candidate in Earth and Environment at Boston University. Environmental economist working on the regional economic impacts of natural disasters, using CGE and econometric models."
   location         : "Boston, MA"
   employer         : "Boston University"
   uri              : # URL

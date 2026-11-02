@@ -1,64 +1,69 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
-author_profile: true
+title: "CV"
+layout: default
+author_profile: false
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<div class="home-wrapper">
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+  <h1 class="home-name">Curriculum Vitae</h1>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+  <p class="home-position">
+    Jiahang He &middot; <a href="mailto:jhhe@bu.edu">jhhe@bu.edu</a>
+    <!-- When you have a PDF, put it in /files/ and link it here:
+    &middot; <a href="/files/cv.pdf">Download PDF</a> -->
+  </p>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  <h2 class="section-heading">Education</h2>
+  <ul class="bullet-list">
+    <li><strong>PhD</strong>, Earth and Environment, Boston University <span class="muted">(in progress)</span><br>
+        <span class="muted">Advisor: Ian Sue Wing</span></li>
+    <li><strong>MS</strong>, Agricultural &amp; Applied Economics, University of Wisconsin&ndash;Madison <span class="muted">(2023)</span></li>
+    <li><strong>BS</strong>, Agricultural &amp; Applied Economics, University of Wisconsin&ndash;Madison <span class="muted">(2022)</span></li>
+  </ul>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  <h2 class="section-heading">Research Experience</h2>
+  <ul class="bullet-list">
+    <li><strong>Research Assistant</strong>, Boston University<br>
+        Analysing and simulating the impact of natural disasters on regional economies
+        using CGE and econometric models, with Ian Sue Wing.</li>
+    <li><span class="muted">Add earlier research positions here &mdash; role, institution, dates.</span></li>
+  </ul>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  <h2 class="section-heading">Research Interests</h2>
+  <ul class="bullet-list">
+    <li>Climate and disaster economics</li>
+    <li>Computable general equilibrium (CGE) modelling</li>
+    <li>Development and environmental economics</li>
+    <li>Electricity adaptation in developing countries</li>
+  </ul>
+
+  <h2 class="section-heading">Publications and Working Papers</h2>
+  <ul class="bullet-list">
+    <li><span class="muted">Add papers here &mdash; authors, title, outlet, year.</span></li>
+  </ul>
+
+  <h2 class="section-heading">Presentations</h2>
+  <ul class="bullet-list">
+    <li><span class="muted">Add conference talks and seminars here.</span></li>
+  </ul>
+
+  <h2 class="section-heading">Teaching</h2>
+  <ul class="bullet-list">
+    <li><span class="muted">Add teaching experience here &mdash; course, institution, term.</span></li>
+  </ul>
+
+  <h2 class="section-heading">Skills</h2>
+  <ul class="bullet-list">
+    <li><span class="muted">Add technical skills here &mdash; e.g. CGE modelling, R, Python, Stata, GAMS.</span></li>
+  </ul>
+
+  <h2 class="section-heading">Awards and Funding</h2>
+  <ul class="bullet-list">
+    <li><span class="muted">Add awards, fellowships and grants here.</span></li>
+  </ul>
+
+</div>
