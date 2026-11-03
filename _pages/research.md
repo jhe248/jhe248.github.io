@@ -37,7 +37,7 @@ author_profile: false
           K. Dresback, R. Kolar, B. Colle, L. Nozick, and I. Sue Wing
           <span class="pub-status">(under review)</span>
         </p>
-        <p class="pub-note"><a href="https://www.researchsquare.com/article/rs-10540460/v1">Preprint</a></p>
+        <p class="pub-note"><a href="{{ base_path }}/compound-hazard/">Project page</a> &middot; <a href="https://www.researchsquare.com/article/rs-10540460/v1">Preprint</a></p>
       </div>
 
       <div class="pub-item">
