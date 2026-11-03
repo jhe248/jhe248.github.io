@@ -9,9 +9,11 @@ author_profile: false
   <h1 class="page__title">Miscellaneous</h1>
 
   <div class="page__content">
-    <p>I have a cat, her name is <a href="{{ base_path }}/raven/">Raven</a>.</p>
-
-    <p>I do pottery sometimes. Here is my <a href="{{ base_path }}/pottery/">pottery work</a>.</p>
+    <ul>
+      <li>I have a cat. Her name is Raven.</li>
+      <li>I do pottery sometimes.</li>
+      <li>I listen to a lot of metal.</li>
+    </ul>
 
     <div class="embed-player">
       <iframe src="https://open.spotify.com/embed/playlist/1n4GqIwZ6RLsOu8ekbXp2k?utm_source=generator"
